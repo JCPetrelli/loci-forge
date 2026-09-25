@@ -49,7 +49,13 @@ To rebuild the base file from code: `just build`.
 9. an upright piano with an open score
 10. an arched green door at the end of the gallery, the way on to the next environment
 
-Its image textures (worn concrete, plaster, leather and metal from [Poly Haven](https://polyhaven.com/)) are not in the repository: put them in `textures/`, one folder per texture with `diff.jpg`, `nor.jpg` and `rough.jpg`. Without them the .blend shows pink materials; the web player doesn't need them, since everything is baked into `palace.glb`.
+Its image textures (worn concrete, plaster, leather, wood and metal) come from [Poly Haven](https://polyhaven.com/) and are not in the repository. They are CC0, free for any use. Download them once before opening `loci_start.blend`:
+
+```sh
+just textures      # or: python3 scripts/fetch_textures.py
+```
+
+This puts `diff.jpg`, `nor.jpg` and `rough.jpg` into `textures/<asset>/`, where the .blend looks for them; re-running skips files already there. Without them the .blend shows pink materials. The web player doesn't need them, since everything is baked into `palace.glb`.
 
 The script is idempotent: it empties the `Archive_Furnishing` collection and rebuilds it, so you can edit and re-run it (from Blender's Python console, or through Blender MCP):
 

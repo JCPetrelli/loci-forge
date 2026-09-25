@@ -12,6 +12,10 @@ build:
 package:
     rm -f loci_walker.zip && cd scripts && zip -rq ../loci_walker.zip loci_walker -x "*/__pycache__/*"
 
+# Download the Poly Haven textures loci_start.blend uses into textures/
+textures:
+    python3 scripts/fetch_textures.py
+
 # Bake and export a palace for the web player (see scripts/export_web.py for options)
 export file="loci_start.blend" palace="archive" *args="":
     "{{blender}}" -b "{{file}}" --python scripts/export_web.py -- --palace {{palace}} {{args}}
