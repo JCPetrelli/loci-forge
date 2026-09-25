@@ -1,15 +1,15 @@
 # loci-forge
 
-Build memory palaces (method of loci) in 3D with Blender, the Blender MCP server and Claude.
+Ready-made memory palaces (method of loci) to walk in 3D, built with Blender, the Blender MCP server and Claude.
 
-The method of loci is an old memory technique. You walk through a place you know, in your head, and leave one vivid image at each station along the way. To recall the material you walk the route again. loci-forge makes those places real: you describe a topic, Claude plans the route and the images, and Blender MCP builds the palace so you can walk through it and render it.
+The method of loci is an old memory technique. You walk through a place, in your head, and leave one vivid image at each station along the way. To recall the material you walk the route again. loci-forge builds the places: halls with a fixed route of well-chosen stations that you can walk in the browser or in Blender. The images are yours to make. Inventing them and binding each one to its place is the memory work itself, so loci-forge never generates them for you.
 
 ## How it works
 
-1. **Topic.** Write down the notions you want to memorize in `topics/`, for example a list, a chapter outline or a set of definitions.
-2. **Plan.** Claude turns the topic into an ordered route of loci (rooms, stations, objects) and gives each notion a vivid, unusual image.
-3. **Build.** Through the Blender MCP server, Claude builds the palace: architecture, props, lighting, labels and a camera path along the route.
-4. **Walk.** Render a fly-through or explore the scene in Blender to rehearse the route.
+1. **Build.** Through the Blender MCP server, Claude builds a palace: architecture, props, lighting and an ordered route of loci. The loci follow the classical rules. Each one is a different kind of object, they are evenly spaced, none stands directly above another, and the route never crosses itself.
+2. **Walk.** Learn the empty route first, in the browser player or in Blender. The loci hints (`L`) show a number over each locus, with every fifth and tenth marked, until you can walk the route without them.
+3. **Populate.** Take the notions you want to remember and place your own image on each locus, in your head. Make it vivid, make it do something, and make it touch the object.
+4. **Learn the technique.** A tutorial inside the player (in progress) explains the method step by step: walking the route, making images, recalling forwards and backwards, and reviewing over the following days.
 
 ## Quick start: walk through a palace
 
@@ -97,7 +97,6 @@ The player draws the baked atlases unlit, lights only the mannequin, and collide
 ## Layout
 
 ```
-topics/    what to memorize (Markdown)
 palaces/   scripts that build and furnish palaces (archive/furnish.py)
 web/       standalone browser player (three.js); assets/<palace>/ holds exports
 scripts/   reusable Blender Python helpers
@@ -111,7 +110,7 @@ scripts/   reusable Blender Python helpers
 
 ## Status
 
-Early stage. The walker and base file work; building palaces from topics is next.
+Early stage. The walker, the Archive palace and the browser player with loci hints work; the tutorial is next.
 
 ## License
 
