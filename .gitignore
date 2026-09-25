@@ -11,3 +11,10 @@ venv/
 *.blend1
 *.blend2
 renders/
+loci_walker.zip
+
+# Research notes for the tutorial (local only)
+research/
+
+# Image textures (Poly Haven), kept local: see README
+textures/
