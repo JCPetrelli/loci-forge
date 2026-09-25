@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>loci-forge</title>
+  <link rel="stylesheet" href="src/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/",
+        "three-mesh-bvh": "https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.8.3/build/index.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="overlay">
+    <div class="card">
+      <h1 id="title">loci-forge</h1>
+      <p id="status">Loading…</p>
+      <div class="bar"><div id="progress"></div></div>
+      <button id="start" hidden>Click to walk</button>
+      <table class="keys">
+        <tr><td>W A S D / arrows</td><td>move</td></tr>
+        <tr><td>mouse</td><td>look</td></tr>
+        <tr><td>Shift</td><td>run</td></tr>
+        <tr><td>Space</td><td>jump</td></tr>
+        <tr><td>V</td><td>first / third person</td></tr>
+        <tr><td>L</td><td>loci hints</td></tr>
+        <tr><td>mouse wheel</td><td>camera distance</td></tr>
+        <tr><td>Esc</td><td>pause</td></tr>
+      </table>
+    </div>
+  </div>
+  <div id="hint">V: switch view · L: loci hints · Esc: pause</div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

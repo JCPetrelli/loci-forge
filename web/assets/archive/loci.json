@@ -1,0 +1,20 @@
+{
+  "about": "Loci hints for the Archive: the places to hang images on, in walking order. The ground floor comes first: the entrance door, the armillary sphere in the middle of the hall, then clockwise (seen from above) past the window wall and the back of the hall to the piano by the door. Then up the stairs and along the gallery to the arched door at its end, which will lead to the next environment. Look-alike objects are one locus, never several (the three display cases, the two paintings), so images placed on them don't get mixed up; no two loci are the same kind of thing, and none stands directly under another. `at` is where the number floats, in Blender coordinates (metres, Z up).",
+  "loci": [
+    {"label": "Entrance door", "at": [0.0, -8.4, 2.3]},
+    {"label": "Armillary sphere", "at": [0.0, -3.9, 3.3]},
+    {"label": "Bench by the sphere", "at": [-3.0, -3.9, 1.2]},
+    {"label": "Ivy-covered column", "at": [-4.95, -6.0, 2.2]},
+    {"label": "Card catalogue", "at": [-8.4, -7.7, 2.0]},
+    {"label": "Reading table", "at": [-7.3, -4.4, 1.5]},
+    {"label": "Paintings between the windows", "at": [-8.6, -0.5, 4.2]},
+    {"label": "Tall bookcase", "at": [0.25, 4.3, 2.9]},
+    {"label": "Display cases", "at": [3.4, -1.1, 2.15]},
+    {"label": "Upright piano", "at": [4.4, -8.3, 1.8]},
+    {"label": "Staircase", "at": [7.6, -5.1, 2.9]},
+    {"label": "Telescope", "at": [7.0, 0.3, 5.5]},
+    {"label": "Globe", "at": [7.9, 2.8, 5.3]},
+    {"label": "Armchair by candlelight", "at": [7.5, 5.2, 5.0]},
+    {"label": "Arched door onward", "at": [8.5, 4.3, 6.35]}
+  ]
+}
